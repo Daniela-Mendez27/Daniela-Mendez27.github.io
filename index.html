@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniela Mendez - Backend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navegación estilo editorial -->
+    <nav class="top-nav">
+        <div class="nav-links">
+            <a href="#inicio">INICIO</a>
+            <a href="#blog">BLOG</a>
+            <a href="#sobre-mi" class="active">SOBRE MÍ</a>
+        </div>
+        <div class="nav-indicators">
+            <span class="circle">01</span>
+            <span class="pill">Daniela-Mendez27</span>
+            <span class="circle">02</span>
+        </div>
+    </nav>
+
+    <main>
+        <!-- SECCIÓN SOBRE MÍ (Oculta por defecto) -->
+        <section id="sobre-mi" class="seccion-tarjeta" style="display: none;">
+            <div class="bio-container">
+                <div class="bio-image-wrapper">
+                    <img src="dani.png" alt="Foto de perfil de Daniela Méndez" class="profile-img">
+                </div>
+                <div class="bio-text">
+                    <p>Mi nombre es Daniela Mendez Camacho, soy mexicana, estudiante de Ingeniería en Computación; mi enfoque es el desarrollo de software Backend con Java y Spring Boot. Apasionada por la lógica detrás del software, las arquitecturas escalables y por aprender algo nuevo cada día.</p>
+                    <p>Vivo en el Estado de México y actualmente estoy consolidando mi formación profesional. Mi camino en la tecnología me llevó a especializarme en el ecosistema de Java y Spring Boot. Aunque entiendo el panorama general del desarrollo, mi verdadera fortaleza y donde más me defiendo es en el lado del servidor, orquestando APIs y diseñando bases de datos relacionales como MySQL y PostgreSQL.</p>
+                    <p>Recientemente, mi etapa de prácticas profesionales en Azal Mechanical marcó un punto de inflexión para mí. Me permitió enfrentarme a proyectos modulares reales y reafirmó mi deseo de crear soluciones eficientes que resuelvan problemas complejos.</p>
+                    <p>Mi sueño es seguir creciendo como ingeniera de software, trabajar en proyectos que reten mis habilidades al máximo y, a través de mi trabajo, poder construir un futuro.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Hero Centrada -->
+        <section class="hero-box section-border">
+            <h1 class="neon-title">DANIELA MENDEZ<br>BACKEND DEVELOPER<br><span class="white-text">JAVA Y SPRING BOOT</span></h1>
+            <p class="subtitle">Construyendo arquitecturas robustas, APIs escalables y sistemas eficientes</p>
+        </section> 
+
+        <!-- TODOS los botones de las tarjetas -->
+        <div style="display: flex; justify-content: center; align-items: center; gap: 15px; flex-wrap: wrap; border-bottom: 1px solid var(--border-color); padding-bottom: 20px; margin-bottom: 20px;">
+            <button class="label-btn toggle-btn active-btn" data-target="card-cursos">CURSOS</button>
+            <button class="label-btn toggle-btn" data-target="card-aprendido">LO APRENDIDO</button>
+            <button class="label-btn toggle-btn" data-target="card-tecnologias">TECNOLOGÍAS UTILIZADAS</button>
+            <button class="label-btn toggle-btn" data-target="card-habilidades">HABILIDADES TÉCNICAS</button>
+            <button class="label-btn toggle-btn" data-target="card-proyectos">PROYECTOS</button>
+        </div>
+
+        <!-- Fila de Tarjetas -->
+        <section class="skills-row section-border cards-container">
+            
+            <!-- Tarjeta de Conocimientos Adquiridos -->
+            <div id="card-aprendido" class="info-card align-left">
+                <h3 class="neon-subtitle">Conocimientos Adquiridos</h3>
+                <ul class="tech-list">
+                    <li><strong>Programación Orientada a Objetos:</strong><br>Creación de clases, objetos, uso de modificadores de acceso, encapsulamiento, polimorfismo, interfaces, clases abstractas, así como el uso de estructuras de datos inmutables (Records) y Streams.</li>
+                    <li><strong>Arquitectura y Buenas Prácticas:</strong><br>Implementación de arquitectura por capas (controladores, servicios, repositorios), patrón Inyección de Dependencias (IoC), separación de lógica de negocio usando DTOs y el patrón DataMapper, además del control centralizado de errores con <code>@RestControllerAdvice</code>.</li>
+                    <li><strong>Persistencia de Datos y Bases de Datos:</strong><br>Creación de operaciones CRUD tanto con consultas nativas (JDBC) como con ORM (JPA/Hibernate). Modelado de bases de datos, claves primarias compuestas, mapeo de relaciones entre tablas, manejo de transacciones ACID y pool de conexiones.</li>
+                    <li><strong>APIs RESTful:</strong><br>Construcción de endpoints (GET, POST, PUT, DELETE), manipulación de códigos de estado HTTP con <code>ResponseEntity</code>, validación automática de parámetros e integración de documentación interactiva.</li>
+                    <li><strong>Despliegue y Herramientas:</strong><br>Empaquetado de aplicaciones con Maven, configuración de contenedores locales con Docker (para PostgreSQL) y publicación de la API en la nube (Heroku, Render).</li>
+                </ul>
+            </div>
+
+            <!-- Tarjeta Principal de Tecnologías Utilizadas -->
+            <div id="card-tecnologias" class="info-card align-left">
+                <h3 class="neon-subtitle">Stack Tecnológico</h3>
+                <div class="tech-grid">
+                    <div class="sub-card">
+                        <h4 class="sub-neon">Lenguajes</h4>
+                        <ul class="tech-list">
+                            <li><strong>Java (JDK 21):</strong> Lenguaje de programación principal para la lógica del backend.</li>
+                            <li><strong>SQL:</strong> Lenguaje para consultas estructuradas en bases de datos relacionales.</li>
+                        </ul>
+                    </div>
+                    <div class="sub-card">
+                        <h4 class="sub-neon">Frameworks y Librerías</h4>
+                        <ul class="tech-list">
+                            <li><strong>Spring Boot / Spring Framework:</strong> Framework principal para desarrollo ágil y estructurado de aplicaciones backend en Java.</li>
+                            <li><strong>Spring Data JPA / Hibernate:</strong> Herramientas de mapeo objeto-relacional (ORM) para la persistencia de datos.</li>
+                            <li><strong>Java Swing:</strong> Librería para creación de interfaces gráficas de usuario.</li>
+                            <li><strong>LangChain4j:</strong> Librería para integrar capacidades de inteligencia artificial en aplicaciones Java.</li>
+                            <li><strong>MapStruct:</strong> Herramienta para mapear de forma automática entidades de base de datos a objetos de transferencia (DTOs).</li>
+                        </ul>
+                    </div>
+                    <div class="sub-card">
+                        <h4 class="sub-neon">Bases de Datos</h4>
+                        <ul class="tech-list">
+                            <li><strong>MySQL:</strong> Sistema de gestión de bases de datos relacionales.</li>
+                            <li><strong>PostgreSQL:</strong> Base de datos relacional avanzada utilizada en proyectos de Spring Boot.</li>
+                        </ul>
+                    </div>
+                    <div class="sub-card">
+                        <h4 class="sub-neon">Desarrollo y Testing</h4>
+                        <ul class="tech-list">
+                            <li><strong>IntelliJ IDEA:</strong> Entorno de desarrollo integrado (IDE) principal.</li>
+                            <li><strong>Maven:</strong> Herramienta de gestión de dependencias y construcción de proyectos.</li>
+                            <li><strong>Postman e Insomnia:</strong> Clientes para realizar pruebas y consumo de APIs REST.</li>
+                            <li><strong>Swagger / OpenAPI:</strong> Herramientas para la documentación interactiva de APIs.</li>
+                        </ul>
+                    </div>
+                    <div class="sub-card">
+                        <h4 class="sub-neon">Infraestructura y DevOps</h4>
+                        <ul class="tech-list">
+                            <li><strong>Docker:</strong> Plataforma para contenedorización de bases de datos y aplicaciones.</li>
+                            <li><strong>Render y Heroku:</strong> Servicios en la nube (PaaS) para desplegar aplicaciones y bases de datos en producción.</li>
+                        </ul>
+                    </div>
+                    <div class="sub-card">
+                        <h4 class="sub-neon">Protocolos y Arquitectura</h4>
+                        <ul class="tech-list">
+                            <li><strong>HTTP / REST:</strong> Protocolos y arquitectura base para la comunicación web.</li>
+                            <li><strong>JDBC:</strong> API estándar de Java para la conexión con bases de datos.</li>
+                            <li><strong>Patrones DAO y Repository:</strong> Patrones de diseño arquitectónico para el acceso a datos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta de Habilidades Técnicas -->
+            <div class="skill-item align-left info-card" id="card-habilidades">
+                <h3 class="neon-subtitle">HABILIDADES TÉCNICAS</h3>
+                <ul class="tech-list">
+                    <li>Diseño y estructuración de arquitecturas backend escalables.</li>
+                    <li>Gestión y consumo de bases de datos relacionales (MySQL).</li>
+                    <li>Creación de APIs RESTful documentadas con OpenAPI/Swagger.</li>
+                    <li>Despliegue de aplicaciones (Deploy).</li>
+                </ul>
+            </div>
+
+            <!-- Tarjeta de Proyectos -->
+            <div class="skill-item align-left info-card" id="card-proyectos">
+                <h3 class="neon-subtitle">PROYECTOS</h3>
+                <ul class="tech-list">
+                    <li><strong>Sistema Azal:</strong> Desarrollo de software de gestión modular.</li>
+                    <li><strong>API REST:</strong> Implementación para Supermercado Spring.</li>
+                    <li><strong>Identidad:</strong> Siempre Team Java.</li>
+                </ul>
+            </div>
+
+            <!-- Tarjeta de Cursos -->
+            <div id="card-cursos" class="info-card align-left active">
+                <h3 class="neon-subtitle">CURSOS</h3>
+                <ul class="tech-list">
+                    <li><strong>Curso de Java:</strong><br>Tiene como objetivo cimentar los fundamentos del lenguaje, dominando la Programación Orientada a Objetos, estructuras de datos, manejo de errores y características modernas de Java.</li>
+                    <li><strong>Introducción al Desarrollo Backend:</strong><br>Brinda una visión agnóstica al lenguaje sobre cómo funciona el lado del servidor, abordando conceptos web, APIs, escalabilidad y arquitecturas en la nube.</li>
+                    <li><strong>Java SE - SQL y Bases de Datos:</strong><br>Su objetivo es conectar el código Java con bases de datos. Enseña a manipular datos directamente mediante JDBC y gradualmente introduce abstracciones más limpias como JPA e Hibernate.</li>
+                    <li><strong>Java Spring Boot:</strong><br>Orientado a la productividad, su objetivo es crear APIs RESTful implementando buenas prácticas (inyección de dependencias, DTOs, manejo centralizado de errores) e integrando herramientas modernas como IA y Docker.</li>
+                    <li><strong>Java Spring:</strong><br>Profundiza en la arquitectura por capas, simulando un entorno empresarial (un sistema de gestión de compras) para consolidar el modelado de dominio, documentación y despliegues a producción.</li>
+                </ul>
+            </div>
+
+            <!-- Tarjeta de Blog -->
+            <div id="card-blog" class="info-card align-left">
+                <h3 class="neon-subtitle">ÚLTIMAS ENTRADAS DEL BLOG</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                    <article style="border: 1px solid rgba(255, 74, 141, 0.3); background-color: rgba(20, 20, 20, 0.5); padding: 20px; border-radius: 10px;">
+                        <h3 style="color: white; font-size: 1.2rem; margin-bottom: 10px;">De la teoría a la práctica: Implementando MVC en Java</h3>
+                        <p style="color: #cccccc; font-size: 0.9rem; margin-bottom: 15px; line-height: 1.5;">
+                            Un análisis técnico sobre cómo estructuré un sistema de gestión docente optimizado utilizando el patrón Modelo-Vista-Controlador...
+                        </p>
+                        <a href="#" id="btn-leer-mvc" style="color: var(--neon-color); text-decoration: none; font-weight: bold; font-size: 0.9rem;">Leer artículo completo →</a>
+                    </article>
+                </div>
+            </div>
+
+            <!-- VISTA DEL ARTÍCULO COMPLETO -->
+            <div id="articulo-completo-mvc" class="info-card align-left">
+                <a href="#" id="btn-volver-blog" style="color: #cccccc; text-decoration: none; font-size: 0.9rem; display: inline-block; margin-bottom: 20px;">
+                    ← Volver al Blog
+                </a>
+                <h2 class="neon-subtitle" style="font-size: 1.8rem; margin-bottom: 10px;">De la teoría a la práctica: Implementando MVC en Java</h2>
+                <p style="color: #888; font-size: 0.85rem; margin-bottom: 25px;">Por Daniela Mendez | Backend Developer</p>
+                <div style="color: #e0e0e0; line-height: 1.6; font-size: 1rem;">
+                    <p style="margin-bottom: 15px;">Cuando comenzamos a aprender patrones de arquitectura, el Modelo-Vista-Controlador (MVC) suele ser uno de los primeros conceptos teóricos con los que nos topamos. Sin embargo, llevar esa teoría a un entorno real es donde ocurre el verdadero aprendizaje.</p>
+                    <p style="margin-bottom: 15px;">Entre febrero y agosto de 2025, tuve la oportunidad de consolidar este patrón al desarrollar un sistema en Java para la Coordinación de Computación. El objetivo principal era claro: optimizar el registro y la gestión de la información docente, un proceso que requería una estructura sólida para manejar el flujo de datos sin mezclar la lógica de negocio con la interfaz.</p>
+                    <h4 style="color: var(--neon-color); margin-top: 25px; margin-bottom: 10px;">La separación de responsabilidades</h4>
+                    <p style="margin-bottom: 15px;">Implementar MVC me permitió estructurar el proyecto de una forma mucho más limpia y escalable. Al aislar la conexión a la base de datos (Modelo) de las pantallas que interactúan con el usuario (Vista), logré que el Controlador actuara como un intermediario eficiente. Esto no solo hizo que el código fuera más fácil de leer, sino que facilitó enormemente la detección y corrección de errores durante la fase de pruebas.</p>
+                    <p>Al final, construir este sistema me demostró por qué arquitecturas como MVC son el estándar de la industria: convierten el caos de la información en flujos lógicos, predecibles y mantenibles.</p>
+                </div>
+            </div>
+        </section> 
+        
+        <!-- Resumen Profesional -->
+        <div class="profile-summary" style="margin-bottom: 40px;">
+            <p>A través de la ruta de Desarrollo Backend con Java, he adquirido competencias sólidas en la construcción de software escalable y arquitecturas del lado del servidor. La capacitación abarcó desde el dominio profundo del lenguaje Java (JDK 21) y los principios de la Programación Orientada a Objetos, hasta la implementación de patrones de diseño modernos orientados a la creación de APIs RESTful.</p>
+            <p>Durante el trayecto de aprendizaje, consolidé mis conocimientos en el diseño y gestión de bases de datos relacionales, manejando MySQL y PostgreSQL. Fui capaz de aplicar conexiones directas mediante JDBC, así como de utilizar técnicas avanzadas de mapeo objeto-relacional (ORM) con JPA e Hibernate, abstrayendo la complejidad de la persistencia de datos mediante los patrones DAO y Repository.</p>
+            <p>El núcleo de mi formación profesional se centró en el dominio del ecosistema Spring (Spring Framework, Spring Boot y Spring Data), herramientas con las que logré orquestar aplicaciones estructuradas bajo arquitecturas por capas. Aprendí a garantizar la calidad del software manejando la inyección de dependencias, aislando datos con DTOs a través de MapStruct, y controlando la validación de peticiones HTTP. Finalmente, adquirí la capacidad operativa para llevar el código a producción mediante prácticas de despliegue en plataformas en la nube (Render y Heroku) y entregar proyectos formales integrando documentación generada con OpenAPI/Swagger.</p>
+        </div>
+
+        <!-- SECCIÓN: MIS REDES (FOOTER) -->
+        <div style="clear: both; display: block; width: 100%; text-align: center; padding: 40px 0; border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 40px;">
+            <h3 style="color: var(--neon-color, #ffffff); font-size: 0.9rem; margin-bottom: 20px; letter-spacing: 2px; font-weight: bold;">
+                MIS REDES
+            </h3>
+            <div style="display: flex; justify-content: center; gap: 40px; align-items: center;">
+                <a href="https://www.linkedin.com/in/daniela-mendez-b6b317354/" target="_blank" rel="noopener noreferrer" style="color: #888888; transition: color 0.3s ease;" onmouseover="this.style.color='#0077b5'" onmouseout="this.style.color='#888888'" title="Perfil de LinkedIn">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="mailto:danielaa.mendez.camacho@outlook.com" style="color: #888888; transition: color 0.3s ease;" onmouseover="this.style.color='#00a4ef'" onmouseout="this.style.color='#888888'" title="Enviar correo a danielaa.mendez.camacho@outlook.com">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        // LÓGICA PARA LAS TARJETAS INFERIORES
+        const buttons = document.querySelectorAll('.toggle-btn');
+        const cards = document.querySelectorAll('.info-card');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetId = button.getAttribute('data-target');
+                cards.forEach(card => card.classList.remove('active'));
+                buttons.forEach(btn => btn.classList.remove('active-btn'));
+                document.getElementById(targetId).classList.add('active');
+                button.classList.add('active-btn');
+            });
+        });
+
+        // LÓGICA PARA "SOBRE MÍ"
+        const enlacesSobreMi = document.querySelectorAll('a[href="#sobre-mi"]');
+        const seccionSobreMi = document.getElementById('sobre-mi');
+
+        enlacesSobreMi.forEach(enlace => {
+            enlace.addEventListener('click', (e) => {
+                e.preventDefault();
+                if (seccionSobreMi.style.display === 'block') {
+                    seccionSobreMi.style.display = 'none';
+                } else {
+                    seccionSobreMi.style.display = 'block';
+                }
+            });
+        });
+
+        // LÓGICA PARA EL ENLACE DE BLOG EN EL MENÚ SUPERIOR
+        const navBlogLink = document.querySelector('a[href="#blog"]');
+        const cardBlog = document.getElementById('card-blog');
+
+        if (navBlogLink && cardBlog) {
+            navBlogLink.addEventListener('click', (e) => {
+                e.preventDefault(); 
+                cards.forEach(card => card.classList.remove('active'));
+                buttons.forEach(btn => btn.classList.remove('active-btn'));
+                seccionSobreMi.style.display = 'none';
+                cardBlog.classList.add('active');
+                cardBlog.scrollIntoView({ behavior: 'smooth' });
+            });
+        }
+
+        // LÓGICA PARA ABRIR Y CERRAR EL ARTÍCULO COMPLETO
+        const btnLeerMvc = document.getElementById('btn-leer-mvc');
+        const btnVolverBlog = document.getElementById('btn-volver-blog');
+        const articuloCompletoMvc = document.getElementById('articulo-completo-mvc');
+
+        if (btnLeerMvc && articuloCompletoMvc) {
+            btnLeerMvc.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.getElementById('card-blog').classList.remove('active');
+                articuloCompletoMvc.classList.add('active');
+                articuloCompletoMvc.scrollIntoView({ behavior: 'smooth' });
+            });
+        }
+
+        if (btnVolverBlog) {
+            btnVolverBlog.addEventListener('click', (e) => {
+                e.preventDefault();
+                articuloCompletoMvc.classList.remove('active');
+                document.getElementById('card-blog').classList.add('active');
+                document.getElementById('card-blog').scrollIntoView({ behavior: 'smooth' });
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,448 @@
+/* Paleta Dark & Neon Pink */
+:root {
+    --bg-dark: #0c050c;
+    --neon-pink: #ff1493;
+    --text-white: #ffffff;
+    --text-gray: #a0a0a0;
+    --border-color: rgba(255, 255, 255, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    line-height: 1.5;
+    padding: 20px;
+}
+
+/* Navegación */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    color: var(--text-white);
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.nav-links a.active {
+    font-weight: 700;
+}
+
+.nav-indicators {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.circle {
+    border: 1px solid var(--text-white);
+    border-radius: 50%;
+    padding: 5px 8px;
+}
+
+.pill {
+    background-color: var(--neon-pink);
+    color: var(--text-white);
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Sistema de Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 sola columna para que abarque todo */
+    gap: 20px;
+}
+
+.section-border {
+    border: 1px solid var(--border-color);
+    padding: 40px;
+}
+
+/* Hero Section Centrada */
+.hero-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 500px;
+    background: linear-gradient(to bottom, rgba(255,20,147,0.1), transparent);
+}
+
+.neon-title {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    color: var(--text-white);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.neon-title .white-text {
+    color: var(--neon-pink);
+}
+
+.subtitle {
+    font-size: 0.8rem;
+    color: var(--text-gray);
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+/* Botones */
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn-outline, .btn-solid {
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s ease; /* Transición suave */
+}
+
+.btn-outline {
+    border: 1px solid var(--text-white);
+    color: var(--text-white);
+    background-color: transparent;
+}
+
+.btn-outline:hover {
+    background-color: var(--text-white);
+    color: var(--bg-dark); /* Invierte a blanco con letras oscuras */
+}
+
+.btn-solid {
+    background-color: var(--neon-pink);
+    color: var(--text-white);
+    border: 1px solid var(--neon-pink);
+}
+
+.btn-solid:hover {
+    background-color: transparent;
+    color: var(--neon-pink); /* Invierte a fondo negro con letras neón */
+}
+
+.btn-solid {
+    background-color: var(--neon-pink);
+    color: var(--text-white);
+    border: 1px solid var(--neon-pink);
+}
+
+.btn-solid:hover {
+    background: transparent;
+    color: var(--neon-pink);
+}
+
+/* Fila Inferior */
+.skills-row {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.skill-item {
+    flex: 1;
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #1a0a1a;
+}
+
+.skill-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.btn-small {
+    display: inline-block;
+    background-color: var(--neon-pink);
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin-top: 15px;
+}
+
+.text-only {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+/* --- NUEVO BOTÓN SEPARADOR DE PROYECTOS --- */
+.section-label-container {
+    border-bottom: 1px solid var(--border-color);
+    padding: 15px 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-btn {
+    background-color: var(--neon-pink);
+    color: var(--text-white);
+    padding: 8px 25px;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid var(--neon-pink); /* Borde preparado para la inversión */
+    box-shadow: 0 0 10px rgba(255, 20, 147, 0.3);
+    transition: 0.3s ease; /* Transición suave */
+    cursor: pointer;
+}
+
+.label-btn:hover {
+    background-color: transparent; /* Invertimos quitando el fondo */
+    color: var(--neon-pink); /* Pintamos las letras */
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.5); /* Aumentamos el brillo */
+}
+/* --- BOTONES INTERACTIVOS Y TARJETAS --- */
+
+/* Contenedor de los botones */
+.interactive-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+/* Arreglo para la fuente de los botones neón */
+button.label-btn {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Estado del botón cuando está "activo" (clickeado) - Estilo de la imagen */
+button.label-btn.active-btn {
+    background-color: transparent; 
+    color: var(--neon-pink); 
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.5); 
+}
+
+/* Ocultar las tarjetas por defecto y darles animación */
+.info-card {
+    display: none; 
+    animation: fadeIn 0.4s ease forwards;
+}
+
+.info-card.active {
+    display: flex; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- ESTILOS INTERNOS DE LAS TARJETAS --- */
+.align-left {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.neon-subtitle {
+    font-size: 1.4rem;
+    color: var(--neon-pink);
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.tech-list {
+    list-style: none;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.tech-list li {
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+    color: var(--text-gray);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 10px;
+}
+
+.tech-list li:last-child {
+    border-bottom: none;
+}
+
+.tech-list li strong {
+    color: var(--text-white);
+    display: block;
+    margin-bottom: 3px;
+    font-size: 0.9rem;
+}
+/* Ocultamos TODAS las tarjetas por defecto */
+.info-card {
+    display: none; 
+}
+
+/* Solo mostramos la tarjeta que tenga la clase 'active' */
+.info-card.active {
+    display: block; 
+    animation: fadeIn 0.4s ease-in-out; 
+}
+
+/* Animación opcional para que no aparezcan de golpe */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Contenedor tipo grid para las sub-tarjetas de tecnologías */
+.tech-grid {
+    display: grid;
+    /* Esto hace que las tarjetas se acomoden solas dependiendo del tamaño de la pantalla */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Estilo individual para cada sub-tarjeta */
+.sub-card {
+    background: rgba(255, 255, 255, 0.03); /* Fondo ligeramente iluminado */
+    border: 1px solid #ff007f; /* Borde rosa (ajústalo a tu variable de color si tienes una) */
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover sutil para las sub-tarjetas */
+.sub-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 0, 127, 0.2);
+}
+
+/* Títulos de las sub-tarjetas */
+.sub-neon {
+    color: #ff007f; /* Color rosa */
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(255, 0, 127, 0.3);
+    padding-bottom: 8px;
+}
+
+/* Estilos para el Resumen Profesional */
+.profile-summary {
+    margin-top: 40px; /* Empuja el texto hacia abajo para separarlo de los botones */
+    margin-bottom: 50px; /* Da espacio antes de que empiecen las tarjetas de abajo */
+    padding: 25px 30px;
+    background: rgba(255, 255, 255, 0.03); 
+    border-left: 4px solid #ff1493; 
+    border-radius: 0 10px 10px 0;
+    line-height: 1.8; /* Da un poco más de espacio entre las líneas del mismo párrafo */
+    color: #e0e0e0;
+    text-align: justify;
+}
+
+/* Separación obligatoria entre los párrafos del resumen */
+.profile-summary p {
+    display: block; /* Asegura que se comporten como bloques separados */
+    margin-bottom: 20px !important; /* Fuerza la separación entre párrafos */
+}
+
+/* Quita el margen extra del último párrafo */
+.profile-summary p:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* Estilos para la sección Sobre Mí */
+.about-section {
+    max-width: 900px;
+    margin: 60px auto; /* Centra la sección y le da aire arriba y abajo */
+    padding: 0 20px;
+    scroll-margin-top: 80px; /* Para que al hacer clic en el menú, no quede tapado por la barra de navegación */
+}
+
+.bio-container {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 0, 127, 0.2); /* Un borde súper sutil color neón */
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.bio-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #cccccc;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.bio-container p:last-child {
+    margin-bottom: 0;
+}
+/* Estructura para alinear la foto y el texto */
+.bio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 0, 127, 0.2); 
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo de la foto con acento neón y filtro sutil */
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; /* La recorta en un círculo perfecto */
+    object-fit: cover; /* Evita que la foto se deforme */
+    border: 3px solid #ff007f; /* Borde rosa neón */
+    box-shadow: 0 0 20px rgba(255, 0, 127, 0.6); /* Brillo alrededor */
+    filter: contrast(1.05) brightness(1.05); 
+}
+
+
+@media (min-width: 768px) {
+    .bio-container {
+        flex-direction: row; 
+        align-items: flex-start;
+    }
+    
+    .profile-img {
+        width: 220px; 
+        height: 220px;
+        position: sticky; 
+        top: 100px; 
+    }
+}
