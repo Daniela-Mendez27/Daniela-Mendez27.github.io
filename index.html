@@ -25,19 +25,19 @@
 
     <main>
         <!-- SECCIÓN SOBRE MÍ (Oculta por defecto) -->
-        <section id="sobre-mi" class="seccion-tarjeta" style="display: none;">
-            <div class="bio-container">
-                <div class="bio-image-wrapper">
-                    <img src="dani.png" alt="Foto de perfil de Daniela Méndez" class="profile-img">
-                </div>
-                <div class="bio-text">
-                    <p>Mi nombre es Daniela Mendez Camacho, soy mexicana, estudiante de Ingeniería en Computación; mi enfoque es el desarrollo de software Backend con Java y Spring Boot. Apasionada por la lógica detrás del software, las arquitecturas escalables y por aprender algo nuevo cada día.</p>
-                    <p>Vivo en el Estado de México y actualmente estoy consolidando mi formación profesional. Mi camino en la tecnología me llevó a especializarme en el ecosistema de Java y Spring Boot. Aunque entiendo el panorama general del desarrollo, mi verdadera fortaleza y donde más me defiendo es en el lado del servidor, orquestando APIs y diseñando bases de datos relacionales como MySQL y PostgreSQL.</p>
-                    <p>Recientemente, mi etapa de prácticas profesionales en Azal Mechanical marcó un punto de inflexión para mí. Me permitió enfrentarme a proyectos modulares reales y reafirmó mi deseo de crear soluciones eficientes que resuelvan problemas complejos.</p>
-                    <p>Mi sueño es seguir creciendo como ingeniera de software, trabajar en proyectos que reten mis habilidades al máximo y, a través de mi trabajo, poder construir un futuro.</p>
-                </div>
-            </div>
-        </section>
+<section id="sobre-mi" class="seccion-tarjeta" style="display: none;">
+    <div class="bio-container">
+        <div class="bio-image-wrapper">
+            <img src="dani.png" alt="Foto de perfil de Daniela Méndez" class="profile-img">
+        </div>
+        <div class="bio-text">
+            <p>Mi nombre es Daniela Mendez Camacho, soy estudiante de Ingeniería en Computación. Mi especialización se centra en el desarrollo de software backend con Java y Spring Boot, impulsada por la pasión hacia la lógica del código, las arquitecturas escalables y el aprendizaje continuo.</p>
+            <p>Resido en el Estado de México, donde consolido mi formación profesional. El camino tecnológico que he recorrido me condujo a profundizar en el ecosistema de Java junto con Spring Boot, lo cual me permite comprender el panorama integral del desarrollo. Mi mayor fortaleza se encuentra en el lado del servidor, donde orquesto APIs mientras diseño bases de datos relacionales como MySQL y PostgreSQL.</p>
+            <p>Durante mis prácticas profesionales en HGW Process and Solutions viví un punto de inflexión. Tuve la oportunidad de enfrentar proyectos modulares reales, experiencia que reafirmó mi deseo de crear soluciones eficientes capaces de resolver problemas complejos.</p>
+            <p>Mi aspiración es seguir creciendo como ingeniera de software. Participar en proyectos que desafíen mis habilidades al máximo. Mediante mi trabajo, contribuir a la construcción de un futuro sólido e innovador.</p>
+        </div>
+    </div>
+</section>
 
         <!-- Sección Hero Centrada -->
         <section class="hero-box section-border">
@@ -215,6 +215,52 @@
         </div>
 
     </main>
+
+    <!-- ==========================================
+         BOTÓN FLOTANTE DE DESCARGA DE CV
+    =========================================== -->
+    <div class="cv-floating-container">
+        <a href="CV_DMC_AGOS2026.pdf" download="CV_DMC_AGOS2026.pdf" class="cv-download-btn">
+            <svg class="cv-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 22px; height: 22px;">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="12" y1="18" x2="12" y2="12"></line>
+                <line x1="9" y1="15" x2="12" y2="18"></line>
+                <line x1="15" y1="15" x2="12" y2="18"></line>
+            </svg>
+            <span>Descarga mi CV aquí</span>
+        </a>
+    </div>
+
+    <style>
+    .cv-floating-container {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 9999;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+    .cv-download-btn {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background-color: #00ff88;
+        color: #0a0a0a;
+        padding: 14px 22px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 0.95rem;
+        text-decoration: none;
+        box-shadow: 0 8px 25px rgba(0, 255, 136, 0.3);
+        transition: all 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .cv-download-btn:hover {
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 12px 30px rgba(0, 255, 136, 0.5);
+        background-color: #1aff94;
+    }
+    </style>
 
     <script>
         // LÓGICA PARA LAS TARJETAS INFERIORES
