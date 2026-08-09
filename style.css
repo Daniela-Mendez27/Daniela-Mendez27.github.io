@@ -581,3 +581,46 @@ button.label-btn.active-btn {
 .tarjeta-stack {
     flex: 0 1 400px; /* Hace que midan máximo 400px de ancho y no se estiren de más */
 }
+
+.cv-floating-container {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 9999;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+    .cv-download-btn {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background-color: #00ff88;
+        color: #0a0a0a;
+        padding: 14px 22px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 0.95rem;
+        text-decoration: none;
+        box-shadow: 0 8px 25px rgba(0, 255, 136, 0.3);
+        transition: all 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .cv-download-btn:hover {
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 12px 30px rgba(0, 255, 136, 0.5);
+        background-color: #1aff94;
+    }
+    
+    /* ESTILOS AGREGADOS PARA CENTRAR EL STACK TECNOLÓGICO */
+    .tech-grid {
+        display: flex;
+        flex-wrap: wrap;         
+        justify-content: center; 
+        gap: 25px;               
+        align-items: stretch;    
+        margin-top: 20px;
+    }
+
+    .sub-card {
+        flex: 1 1 300px;         
+        max-width: 450px;        
+    }
