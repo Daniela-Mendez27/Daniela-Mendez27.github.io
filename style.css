@@ -445,4 +445,139 @@ button.label-btn.active-btn {
         position: sticky; 
         top: 100px; 
     }
+
+    
+}
+
+/* Proyectos  */
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    align-items: start; /* Permite que cada tarjeta crezca hacia abajo independiente de las demás */
+    margin-top: 20px;
+}
+
+/* Tarjeta interactiva con el MARCO ROSA */
+.proyecto-interactivo {
+    background-color: var(--bg-dark); 
+    border: 1px solid var(--neon-pink); /* Marco rosa neón */
+    border-radius: 8px;
+    font-family: system-ui, -apple-system, sans-serif;
+    overflow: hidden; 
+    transition: box-shadow 0.4s ease, background-color 0.4s ease;
+}
+
+/* Brillo al pasar el cursor */
+.proyecto-interactivo:hover {
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.3), inset 0 0 5px rgba(255, 20, 147, 0.1);
+    background-color: #120712; /* Un tono ligerísimamente más claro del fondo oscuro */
+}
+
+/* Barra del TÍTULO EN ROSA */
+.proyecto-header {
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    text-align: left;
+}
+
+.proyecto-header h3 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--neon-pink); /* Título en rosa */
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 5px rgba(255, 20, 147, 0.4);
+}
+
+/* Contenedor de la información (OCULTO por defecto) */
+.proyecto-contenido {
+    max-height: 0;
+    opacity: 0;
+    padding: 0 20px;
+    transition: max-height 0.6s ease, opacity 0.4s ease, padding 0.6s ease;
+}
+
+/* Aparece la información al hacer hover */
+.proyecto-interactivo:hover .proyecto-contenido {
+    max-height: 800px; 
+    opacity: 1;
+    padding: 0 20px 20px 20px; 
+}
+
+/* Textos internos (Blancos y grises como en tu imagen) */
+.proyecto-rol {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-white);
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.proyecto-descripcion {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--text-gray); 
+    margin-bottom: 20px;
+}
+
+/* Etiquetas (Pills) */
+.proyecto-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.pill {
+    background-color: transparent; 
+    color: var(--neon-pink); 
+    border: 1px solid var(--neon-pink);
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 0.7rem;
+    font-family: 'Courier New', Courier, monospace; 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Botón del repositorio */
+.repo-link {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: transparent;
+    border: 1px solid var(--neon-pink);
+    color: var(--neon-pink);
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.repo-link:hover {
+    background-color: var(--neon-pink);
+    color: var(--text-white);
+    box-shadow: 0 0 10px var(--neon-pink);
+}
+
+/* Contenedor principal de las tarjetas de tecnologías */
+.contenedor-stack {
+    display: flex;
+    justify-content: center; /* Esta es la propiedad mágica que centra las tarjetas */
+    gap: 30px;               /* Espacio entre la tarjeta de Lenguajes y Frameworks */
+    flex-wrap: wrap;         /* Asegura que en celulares se ponga una debajo de la otra */
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Ajuste opcional para las tarjetas por si están abarcando toda la pantalla */
+.tarjeta-stack {
+    flex: 0 1 400px; /* Hace que midan máximo 400px de ancho y no se estiren de más */
 }

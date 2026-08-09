@@ -25,19 +25,22 @@
 
     <main>
         <!-- SECCIÓN SOBRE MÍ (Oculta por defecto) -->
-<section id="sobre-mi" class="seccion-tarjeta" style="display: none;">
-    <div class="bio-container">
-        <div class="bio-image-wrapper">
-            <img src="dani.png" alt="Foto de perfil de Daniela Méndez" class="profile-img">
-        </div>
-        <div class="bio-text">
-            <p>Mi nombre es Daniela Mendez Camacho, soy estudiante de Ingeniería en Computación. Mi especialización se centra en el desarrollo de software backend con Java y Spring Boot, impulsada por la pasión hacia la lógica del código, las arquitecturas escalables y el aprendizaje continuo.</p>
-            <p>Resido en el Estado de México, donde consolido mi formación profesional. El camino tecnológico que he recorrido me condujo a profundizar en el ecosistema de Java junto con Spring Boot, lo cual me permite comprender el panorama integral del desarrollo. Mi mayor fortaleza se encuentra en el lado del servidor, donde orquesto APIs mientras diseño bases de datos relacionales como MySQL y PostgreSQL.</p>
-            <p>Durante mis prácticas profesionales en HGW Process and Solutions viví un punto de inflexión. Tuve la oportunidad de enfrentar proyectos modulares reales, experiencia que reafirmó mi deseo de crear soluciones eficientes capaces de resolver problemas complejos.</p>
-            <p>Mi aspiración es seguir creciendo como ingeniera de software. Participar en proyectos que desafíen mis habilidades al máximo. Mediante mi trabajo, contribuir a la construcción de un futuro sólido e innovador.</p>
-        </div>
-    </div>
-</section>
+        <section id="sobre-mi" class="seccion-tarjeta" style="display: none;">
+            <div class="bio-container">
+                <div class="bio-image-wrapper">
+                    <img src="dani.png" alt="Foto de perfil de Daniela Méndez" class="profile-img">
+                </div>
+                <div class="bio-text">
+                    <p>Soy Daniela Mendez Camacho, recién egresada de la carrera de Ingeniería en Computación de la UAEMex. Mi enfoque y lo que más me apasiona es el desarrollo de software backend con Java y Spring Boot.</p>
+                    
+                    <p>Me gusta mucho prepararme de forma constante para ser una gran desarrolladora, por eso sigo estudiando en Platzi. Ya concluí la ruta de 'Programación Orientada a Objetos con Java' y ahorita estoy terminando la de 'Desarrollo Backend con Java'. Mi meta a futuro es trabajar y sumar experiencia en empresas de gran prestigio.</p>
+                    
+                    <p>En el trabajo me considero una persona honesta, puntual y muy responsable. Gracias a mis prácticas en HGW Process and Solutions, he aprendido a llevar la teoría a proyectos reales y modulares para resolver problemas del día a día.</p>
+                    
+                    <p>Para distraerme de la pantalla me gusta mucho escuchar música y ver películas, ya que eso me tranquiliza bastante. También hago ejercicio para mantener un buen equilibrio y tener energía en mi rutina.</p>
+                </div>
+                
+        </section>
 
         <!-- Sección Hero Centrada -->
         <section class="hero-box section-border">
@@ -49,7 +52,7 @@
         <div style="display: flex; justify-content: center; align-items: center; gap: 15px; flex-wrap: wrap; border-bottom: 1px solid var(--border-color); padding-bottom: 20px; margin-bottom: 20px;">
             <button class="label-btn toggle-btn active-btn" data-target="card-cursos">CURSOS</button>
             <button class="label-btn toggle-btn" data-target="card-aprendido">LO APRENDIDO</button>
-            <button class="label-btn toggle-btn" data-target="card-tecnologias">TECNOLOGÍAS UTILIZADAS</button>
+            <button class="label-btn toggle-btn" data-target="card-tecnologias">STACK TECNOLÓGICO</button>
             <button class="label-btn toggle-btn" data-target="card-habilidades">HABILIDADES TÉCNICAS</button>
             <button class="label-btn toggle-btn" data-target="card-proyectos">PROYECTOS</button>
         </div>
@@ -71,7 +74,6 @@
 
             <!-- Tarjeta Principal de Tecnologías Utilizadas -->
             <div id="card-tecnologias" class="info-card align-left">
-                <h3 class="neon-subtitle">Stack Tecnológico</h3>
                 <div class="tech-grid">
                     <div class="sub-card">
                         <h4 class="sub-neon">Lenguajes</h4>
@@ -124,36 +126,149 @@
                 </div>
             </div>
 
+            
             <!-- Tarjeta de Habilidades Técnicas -->
             <div class="skill-item align-left info-card" id="card-habilidades">
                 <h3 class="neon-subtitle">HABILIDADES TÉCNICAS</h3>
                 <ul class="tech-list">
-                    <li>Diseño y estructuración de arquitecturas backend escalables.</li>
-                    <li>Gestión y consumo de bases de datos relacionales (MySQL).</li>
-                    <li>Creación de APIs RESTful documentadas con OpenAPI/Swagger.</li>
-                    <li>Despliegue de aplicaciones (Deploy).</li>
+                    <li><strong>Desarrollo Backend Avanzado:</strong> Dominio de la Programación Orientada a Objetos (POO), programación funcional con flujos de datos (Streams) y estructuración de arquitecturas limpias y escalables (MVC).</li>
+                    <li><strong>Ecosistema Spring:</strong> Construcción ágil de APIs RESTful utilizando Spring Boot, manejando inyección de dependencias y documentando endpoints de manera interactiva con OpenAPI/Swagger.</li>
+                    <li><strong>Gestión de Bases de Datos Relacionales:</strong> Diseño de esquemas, optimización de consultas y persistencia de datos manejando tanto MySQL como PostgreSQL, aplicando integraciones directas (JDBC) y herramientas ORM (JPA/Hibernate).</li>
+                    <li><strong>Despliegue y Control de Versiones:</strong> Administración de código fuente y colaboración en equipo mediante Git y GitHub, empaquetado de proyectos (Maven/Gradle) y despliegue (Deploy) en plataformas Cloud.</li>
+                    <li><strong>Integración de Sistemas:</strong> Implementación de lógicas de autenticación, manejo de sesiones (incluyendo Single Sign-On) y orquestación de flujos de datos complejos para aplicaciones empresariales.</li>
                 </ul>
             </div>
 
-            <!-- Tarjeta de Proyectos -->
-            <div class="skill-item align-left info-card" id="card-proyectos">
-                <h3 class="neon-subtitle">PROYECTOS</h3>
-                <ul class="tech-list">
-                    <li><strong>Sistema Azal:</strong> Desarrollo de software de gestión modular.</li>
-                    <li><strong>API REST:</strong> Implementación para Supermercado Spring.</li>
-                    <li><strong>Identidad:</strong> Siempre Team Java.</li>
-                </ul>
+            <!-- Tarjeta de Proyectos (Sigue la arquitectura de tu portafolio) -->
+            <div id="card-proyectos" class="skill-item align-left info-card">
+                
+                            <!-- Proyecto: HGW Process and Solutions -->
+                <div class="proyecto-interactivo">
+                    <div class="proyecto-header">
+                        <h3>HGW Process and Solutions</h3>
+                    </div>
+                    <div class="proyecto-contenido">
+                        <h4 class="proyecto-rol">Prácticas Profesionales / Desarrollo Fullstack</h4>
+                        <p class="proyecto-descripcion">
+                            Desarrollo de un sistema web integral. En el backend se implementó una API con Node.js y Express, integrando autenticación mediante Passport, generación automatizada de documentos con Puppeteer y gestión de base de datos en PostgreSQL (Neon) utilizando Drizzle ORM. El frontend fue construido con React, TypeScript y Vite, aplicando un diseño moderno y responsivo con Tailwind CSS y componentes de Radix/shadcn.
+                        </p>
+                        <div class="proyecto-pills">
+                            <span class="pill">Node.js + Express</span>
+                            <span class="pill">React + Vite</span>
+                            <span class="pill">TypeScript</span>
+                            <span class="pill">PostgreSQL</span>
+                            <span class="pill">Drizzle ORM</span>
+                            <span class="pill">Tailwind CSS</span>
+                            <span class="pill">Puppeteer</span>
+                        </div>
+                        <!-- Sustituye el # con el link de tu repositorio -->
+                        <a href="#" target="_blank" class="repo-link">🔗 Repositorio</a>
+                    </div>
+                </div>
+
+                    <!-- Proyecto 2: Platzi Market -->
+                    <div class="proyecto-interactivo">
+                        <div class="proyecto-header">
+                            <h3>Platzi Market</h3>
+                        </div>
+                        <div class="proyecto-contenido">
+                            <h4 class="proyecto-rol">Desarrollo Backend</h4>
+                            <p class="proyecto-descripcion">
+                                Desarrollo de una API RESTful para gestión estructurada en capas. Implementa lógica de negocio, persistencia de datos relacionales, mapeo de entidades y buenas prácticas de arquitectura de software utilizando el ecosistema de Spring.
+                            </p>
+                            <div class="proyecto-pills">
+                                <span class="pill">Java</span>
+                                <span class="pill">Spring Boot</span>
+                                <span class="pill">PostgreSQL</span>
+                                <span class="pill">API REST</span>
+                            </div>
+                            <a href="https://github.com/Daniela-Mendez27/platzi-market.git" target="_blank" class="repo-link">🔗 Repositorio</a>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3: Platzi-play -->
+                    <div class="proyecto-interactivo">
+                        <div class="proyecto-header">
+                            <h3>Platzi-play</h3>
+                        </div>
+                        <div class="proyecto-contenido">
+                            <h4 class="proyecto-rol">Desarrollo Backend / Despliegue</h4>
+                            <p class="proyecto-descripcion">
+                                Aplicación compilada y desplegada en la nube. Gestión de configuraciones de puertos y variables de entorno mediante perfiles de ejecución activos para separar los ambientes de desarrollo y producción.
+                            </p>
+                            <div class="proyecto-pills">
+                                <span class="pill">Java</span>
+                                <span class="pill">Spring Boot</span>
+                                <span class="pill">Gradle</span>
+                                <span class="pill">Cloud Hosting</span>
+                            </div>
+                            <a href="https://github.com/Daniela-Mendez27/platzi-play-spring.git" target="_blank" class="repo-link">🔗 Repositorio</a>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 4: Sistema de Gestión Docente -->
+                    <div class="proyecto-interactivo">
+                        <div class="proyecto-header">
+                            <h3>Sistema de Gestión Docente</h3>
+                        </div>
+                        <div class="proyecto-contenido">
+                            <h4 class="proyecto-rol">Servicio Social / Desarrolladora</h4>
+                            <p class="proyecto-descripcion">
+                                Implementación de un sistema bajo arquitectura Modelo-Vista-Controlador (MVC) para la Coordinación de Computación. Optimiza el registro y gestión docente con una estructura limpia y escalable.
+                            </p>
+                            <div class="proyecto-pills">
+                                <span class="pill">Java SE</span>
+                                <span class="pill">MySQL</span>
+                                <span class="pill">Arquitectura MVC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <!-- Tarjeta de Cursos -->
             <div id="card-cursos" class="info-card align-left active">
-                <h3 class="neon-subtitle">CURSOS</h3>
+                <h3 class="neon-subtitle">CURSOS Y CERTIFICACIONES</h3>
                 <ul class="tech-list">
-                    <li><strong>Curso de Java:</strong><br>Tiene como objetivo cimentar los fundamentos del lenguaje, dominando la Programación Orientada a Objetos, estructuras de datos, manejo de errores y características modernas de Java.</li>
-                    <li><strong>Introducción al Desarrollo Backend:</strong><br>Brinda una visión agnóstica al lenguaje sobre cómo funciona el lado del servidor, abordando conceptos web, APIs, escalabilidad y arquitecturas en la nube.</li>
-                    <li><strong>Java SE - SQL y Bases de Datos:</strong><br>Su objetivo es conectar el código Java con bases de datos. Enseña a manipular datos directamente mediante JDBC y gradualmente introduce abstracciones más limpias como JPA e Hibernate.</li>
-                    <li><strong>Java Spring Boot:</strong><br>Orientado a la productividad, su objetivo es crear APIs RESTful implementando buenas prácticas (inyección de dependencias, DTOs, manejo centralizado de errores) e integrando herramientas modernas como IA y Docker.</li>
-                    <li><strong>Java Spring:</strong><br>Profundiza en la arquitectura por capas, simulando un entorno empresarial (un sistema de gestión de compras) para consolidar el modelado de dominio, documentación y despliegues a producción.</li>
+                    <li>
+                        <strong>Ruta de Aprendizaje: Programación Orientada a Objetos con Java</strong>
+                        <ul style="list-style-type: disc; margin-left: 20px; margin-top: 5px;">
+                            <li>
+                                <strong>Curso Avanzado de Java SE:</strong> Estructuras de datos avanzadas, modularidad y optimización.<br>
+                                <a href="https://platzi.com/p/camachodanim27/curso/1236-course/diploma/detalle/" target="_blank" style="color: var(--neon-color); font-size: 0.85rem; text-decoration: none;">🔗 Ver Diploma</a>
+                            </li>
+                            <li style="margin-top: 8px;">
+                                <strong>Curso de Programación Funcional con Java SE:</strong> Streams, expresiones Lambda y código de estilo declarativo.<br>
+                                <a href="https://platzi.com/p/camachodanim27/curso/1826-course/diploma/detalle/" target="_blank" style="color: var(--neon-color); font-size: 0.85rem; text-decoration: none;">🔗 Ver Diploma</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="margin-top: 20px;">
+                        <strong>Ruta de Aprendizaje: Desarrollo Backend con Java</strong>
+                        <ul style="list-style-type: disc; margin-left: 20px; margin-top: 5px;">
+                            <li>
+                                <strong>Curso de Introducción al Desarrollo Backend:</strong> Fundamentos de arquitectura cliente-servidor, protocolos de comunicación y lógica de negocio.<br>
+                                <a href="https://platzi.com/p/camachodanim27/curso/12199-course/diploma/detalle/" target="_blank" style="color: var(--neon-color); font-size: 0.85rem; text-decoration: none;">🔗 Ver Diploma</a>
+                            </li>
+                            <li style="margin-top: 8px;">
+                                <strong>Curso de Java:</strong> Cimentación de los fundamentos del lenguaje, dominando la Programación Orientada a Objetos, estructuras de datos, manejo de errores y características modernas de Java. <br>
+                                <a href="https://platzi.com/p/camachodanim27/curso/4656-course/diploma/detalle/" target="_blank" style="color: var(--neon-color); font-size: 0.85rem; text-decoration: none;">🔗 Ver Diploma</a>
+                            </li>
+                            <li style="margin-top: 8px;">
+                                <strong>Curso de Java SE: SQL y Bases de Datos:</strong> Diseño de esquemas, manipulación de datos relacionales e integración con el lenguaje.<br>
+                                <a href="https://platzi.com/p/camachodanim27/curso/8048-course/diploma/detalle/" target="_blank" style="color: var(--neon-color); font-size: 0.85rem; text-decoration: none;">🔗 Ver Diploma</a>
+                            </li>
+                            <li style="margin-top: 8px;">
+                                <strong>Curso de Java Spring:</strong> Fundamentos del framework, inyección de dependencias y contenedor de inversión de control.<br>
+                                <a href="https://platzi.com/p/camachodanim27/curso/12217-course/diploma/detalle/" target="_blank" style="color: var(--neon-color); font-size: 0.85rem; text-decoration: none;">🔗 Ver Diploma</a>
+                            </li>
+                            <li style="margin-top: 8px;">
+                                <strong>Curso de Java Spring Boot:</strong> Construcción rápida de aplicaciones listas para producción y configuración automatizada de APIs RESTful.<br>
+                                <a href="https://platzi.com/p/camachodanim27/curso/1996-course/diploma/detalle/" target="_blank" style="color: var(--neon-color); font-size: 0.85rem; text-decoration: none;">🔗 Ver Diploma</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
 
@@ -188,12 +303,7 @@
             </div>
         </section> 
         
-        <!-- Resumen Profesional -->
-        <div class="profile-summary" style="margin-bottom: 40px;">
-            <p>A través de la ruta de Desarrollo Backend con Java, he adquirido competencias sólidas en la construcción de software escalable y arquitecturas del lado del servidor. La capacitación abarcó desde el dominio profundo del lenguaje Java (JDK 21) y los principios de la Programación Orientada a Objetos, hasta la implementación de patrones de diseño modernos orientados a la creación de APIs RESTful.</p>
-            <p>Durante el trayecto de aprendizaje, consolidé mis conocimientos en el diseño y gestión de bases de datos relacionales, manejando MySQL y PostgreSQL. Fui capaz de aplicar conexiones directas mediante JDBC, así como de utilizar técnicas avanzadas de mapeo objeto-relacional (ORM) con JPA e Hibernate, abstrayendo la complejidad de la persistencia de datos mediante los patrones DAO y Repository.</p>
-            <p>El núcleo de mi formación profesional se centró en el dominio del ecosistema Spring (Spring Framework, Spring Boot y Spring Data), herramientas con las que logré orquestar aplicaciones estructuradas bajo arquitecturas por capas. Aprendí a garantizar la calidad del software manejando la inyección de dependencias, aislando datos con DTOs a través de MapStruct, y controlando la validación de peticiones HTTP. Finalmente, adquirí la capacidad operativa para llevar el código a producción mediante prácticas de despliegue en plataformas en la nube (Render y Heroku) y entregar proyectos formales integrando documentación generada con OpenAPI/Swagger.</p>
-        </div>
+       
 
         <!-- SECCIÓN: MIS REDES (FOOTER) -->
         <div style="clear: both; display: block; width: 100%; text-align: center; padding: 40px 0; border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 40px;">
@@ -259,6 +369,21 @@
         transform: translateY(-4px) scale(1.02);
         box-shadow: 0 12px 30px rgba(0, 255, 136, 0.5);
         background-color: #1aff94;
+    }
+    
+    /* ESTILOS AGREGADOS PARA CENTRAR EL STACK TECNOLÓGICO */
+    .tech-grid {
+        display: flex;
+        flex-wrap: wrap;         
+        justify-content: center; 
+        gap: 25px;               
+        align-items: stretch;    
+        margin-top: 20px;
+    }
+
+    .sub-card {
+        flex: 1 1 300px;         
+        max-width: 450px;        
     }
     </style>
 
