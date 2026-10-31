@@ -65,6 +65,7 @@
                 <h3 class="neon-subtitle">Conocimientos Adquiridos</h3>
                 <ul class="tech-list">
                     <li><strong>Programación Orientada a Objetos:</strong><br>Creación de clases, objetos, uso de modificadores de acceso, encapsulamiento, polimorfismo, interfaces, clases abstractas, así como el uso de estructuras de datos inmutables (Records) y Streams.</li>
+                   <li><strong>Persistencia y Consultas Avanzadas:</strong><br>Diseño de repositorios basados en <code>ListCrudRepository</code>, consultas dinámicas con expresiones SpEL, JPQL y `@Query`, manejo de llaves compuestas mediante <code>@IdClass</code>, paginación y ordenamiento dinámico.</li>
                     <li><strong>Arquitectura y Buenas Prácticas:</strong><br>Implementación de arquitectura por capas (controladores, servicios, repositorios), patrón Inyección de Dependencias (IoC), separación de lógica de negocio usando DTOs y el patrón DataMapper, además del control centralizado de errores con <code>@RestControllerAdvice</code>.</li>
                     <li><strong>Arquitectura de Microservicios:</strong><br>Comprensión de los fundamentos de arquitecturas distribuidas, diseño modular y estrategias de comunicación eficiente entre servicios independientes.</li>
                     <li><strong>Persistencia de Datos y Bases de Datos:</strong><br>Creación de operaciones CRUD tanto con consultas nativas (JDBC) como con ORM (JPA/Hibernate). Modelado de bases de datos, claves primarias compuestas, mapeo de relaciones entre tablas, manejo de transacciones ACID y pool de conexiones.</li>
@@ -86,12 +87,13 @@
                     <div class="sub-card">
                         <h4 class="sub-neon">Frameworks y Librerías</h4>
                         <ul class="tech-list">
-                            <li><strong>Spring Boot / Spring Framework:</strong> Framework principal para desarrollo ágil y estructurado de aplicaciones backend en Java.</li>
+                           <li><strong>Spring Boot / Spring Framework:</strong> Framework principal para desarrollo ágil y estructurado de aplicaciones backend en Java.</li>
                             <li><strong>Spring Data JPA / Hibernate:</strong> Herramientas de mapeo objeto-relacional (ORM) para la persistencia de datos.</li>
+                            <li><strong>Spring Security:</strong> Implementación de autenticación, filtros y seguridad web.</li>
+                            <li><strong>Lombok:</strong> Librería para automatizar la generación de código repetitivo en entidades y DTOs.</li>
                             <li><strong>Java Swing:</strong> Librería para creación de interfaces gráficas de usuario.</li>
                             <li><strong>LangChain4j:</strong> Librería para integrar capacidades de inteligencia artificial en aplicaciones Java.</li>
                             <li><strong>MapStruct:</strong> Herramienta para mapear de forma automática entidades de base de datos a objetos de transferencia (DTOs).</li>
-                        </ul>
                     </div>
                     <div class="sub-card">
                         <h4 class="sub-neon">Bases de Datos</h4>
@@ -133,11 +135,11 @@
             <div class="skill-item align-left info-card" id="card-habilidades">
                 <h3 class="neon-subtitle">HABILIDADES TÉCNICAS</h3>
                 <ul class="tech-list">
-                    <li><strong>Desarrollo Backend Avanzado:</strong> Dominio de la Programación Orientada a Objetos (POO), programación funcional con flujos de datos (Streams) y estructuración de arquitecturas limpias y escalables (MVC).</li>
-                    <li><strong>Ecosistema Spring:</strong> Construcción ágil de APIs RESTful utilizando Spring Boot, manejando inyección de dependencias y documentando endpoints de manera interactiva con OpenAPI/Swagger.</li>
-                    <li><strong>Gestión de Bases de Datos Relacionales:</strong> Diseño de esquemas, optimización de consultas y persistencia de datos manejando tanto MySQL como PostgreSQL, aplicando integraciones directas (JDBC) y herramientas ORM (JPA/Hibernate).</li>
-                    <li><strong>Despliegue y Control de Versiones:</strong> Administración de código fuente y colaboración en equipo mediante Git y GitHub, empaquetado de proyectos (Maven/Gradle) y despliegue (Deploy) en plataformas Cloud.</li>
-                    <li><strong>Integración de Sistemas:</strong> Implementación de lógicas de autenticación, manejo de sesiones (incluyendo Single Sign-On) y orquestación de flujos de datos complejos para aplicaciones empresariales.</li>
+                    <li><strong>Desarrollo Backend Avanzado:</strong> Dominio de la Programación Orientada a Objetos (POO), programación funcional con flujos de datos (Streams/Lambdas) y estructuración de arquitecturas limpias, escalables (MVC) y diseño modular de Microservicios.</li>
+                    <li style="margin-top: 10px;"><strong>Ecosistema Spring:</strong> Construcción ágil de APIs RESTful utilizando Spring Boot, inyección de dependencias (IoC), seguridad web y autenticación con Spring Security, y documentación interactiva de endpoints con OpenAPI/Swagger.</li>
+                    <li style="margin-top: 10px;"><strong>Gestión de Bases de Datos y Persistencia Avanzada:</strong> Diseño de esquemas relacionales, consultas dinámicas (SpEL, JPQL), manejo de llaves compuestas (<code>@IdClass</code>), paginación y optimización de persistencia en PostgreSQL y MySQL utilizando JPA/Hibernate y JDBC.</li>
+                    <li style="margin-top: 10px;"><strong>Despliegue, Contenedores y Herramientas:</strong> Administración y control de versiones con Git/GitHub, automatización y empaquetado de builds con Maven y Gradle, contenedorización local con Docker y despliegue continuo en la nube (Render/Heroku).</li>
+                    <li style="margin-top: 10px;"><strong>Integración y Mapeo de Datos:</strong> Separación estricta de responsabilidades mediante el patrón DTO, mapeo automático de entidades con MapStruct, simplificación de código con Lombok y manejo centralizado de excepciones con <code>@RestControllerAdvice</code>.</li>
                 </ul>
             </div>
 
@@ -188,6 +190,29 @@
                         </div>
                     </div>
 
+                    <!-- Proyecto: Pizzeria JPA -->
+                <div class="proyecto-interactivo">
+                    <div class="proyecto-header">
+                        <h3>PIZZERIA JPA</h3>
+                    </div>
+                    <div class="proyecto-contenido">
+                        <h4 class="proyecto-rol">Desarrollo Backend</h4>
+                        <p class="proyecto-descripcion">
+                            Desarrollo de lógica avanzada de persistencia y consultas optimizadas para una API RESTful. Se implementó la gestión estructurada en capas, repositorios basados en ListCrudRepository, consultas dinámicas con expresiones SpEL y paginación, manejo de llaves compuestas mediante @IdClass y optimización de entidades con Hibernate y Lombok.
+                        </p>
+                        <div class="proyecto-pills">
+                            <span class="pill">Java</span>
+                            <span class="pill">Spring Boot</span>
+                            <span class="pill">Spring Data JPA</span>
+                            <span class="pill">PostgreSQL</span>
+                            <span class="pill">Hibernate</span>
+                            <span class="pill">Lombok</span>
+                            <span class="pill">Maven</span>
+                        </div>
+                        <a href="https://github.com/Daniela-Mendez27/SpringDataJPA-pizzeria.git" target="_blank" class="repo-link">🔗 Repositorio</a>
+                    </div>
+                </div>
+
                     <!-- Proyecto 3: Platzi-play -->
                     <div class="proyecto-interactivo">
                         <div class="proyecto-header">
@@ -229,50 +254,60 @@
 
             </div>
 
-            <!-- Tarjeta de Cursos -->
+        <!-- Tarjeta de Cursos y Certificaciones -->
             <div id="card-cursos" class="info-card align-left active">
-                <h3 class="neon-subtitle">CURSOS Y CERTIFICACIONES</h3>
+                <h3 class="neon-subtitle">CURSOS Y CERTIFICACIONES (PLATZI)</h3>
                 <ul class="tech-list">
                     <li>
-                        <strong>Ruta de Aprendizaje: Programación Orientada a Objetos con Java</strong>
-                        <ul style="list-style-type: disc; margin-left: 20px; margin-top: 5px;">
+                        <strong>Ruta: Programación Orientada a Objetos con Java</strong>
+                        <ul style="list-style-type: disc; margin-left: 20px; margin-top: 6px; line-height: 1.6;">
                             <li>
                                 <strong>Curso Avanzado de Java SE:</strong> Estructuras de datos avanzadas, modularidad y optimización.<br>
                                 <a href="https://platzi.com/p/camachodanim27/curso/1236-course/diploma/detalle/" target="_blank" style="color: var(--neon-color); font-size: 0.85rem; text-decoration: none;">🔗 Ver Diploma</a>
                             </li>
                             <li style="margin-top: 8px;">
-                                <strong>Curso de Programación Funcional con Java SE:</strong> Streams, expresiones Lambda y código de estilo declarativo.<br>
+                                <strong>Curso de Programación Funcional con Java SE:</strong> Streams, expresiones Lambda y código declarativo.<br>
                                 <a href="https://platzi.com/p/camachodanim27/curso/1826-course/diploma/detalle/" target="_blank" style="color: var(--neon-color); font-size: 0.85rem; text-decoration: none;">🔗 Ver Diploma</a>
                             </li>
                         </ul>
                     </li>
-                    <li style="margin-top: 20px;">
-                        <strong>Ruta de Aprendizaje: Desarrollo Backend con Java</strong>
-                        <ul style="list-style-type: disc; margin-left: 20px; margin-top: 5px;">
+
+                    <li style="margin-top: 18px;">
+                        <strong>Ruta: Desarrollo Backend con Java</strong>
+                        <ul style="list-style-type: disc; margin-left: 20px; margin-top: 6px; line-height: 1.6;">
                             <li>
-                                <strong>Curso de Introducción al Desarrollo Backend:</strong> Fundamentos de arquitectura cliente-servidor, protocolos de comunicación y lógica de negocio.<br>
-                                <a href="https://platzi.com/p/camachodanim27/curso/12199-course/diploma/detalle/" target="_blank" style="color: var(--neon-color); font-size: 0.85rem; text-decoration: none;">🔗 Ver Diploma</a>
-                            </li>
-                            <li style="margin-top: 8px;">
-                                <strong>Curso de Java:</strong> Cimentación de los fundamentos del lenguaje, dominando la Programación Orientada a Objetos, estructuras de datos, manejo de errores y características modernas de Java. <br>
+                                <strong>Curso de Java:</strong> Cimentación de los fundamentos del lenguaje y POO.<br>
                                 <a href="https://platzi.com/p/camachodanim27/curso/4656-course/diploma/detalle/" target="_blank" style="color: var(--neon-color); font-size: 0.85rem; text-decoration: none;">🔗 Ver Diploma</a>
                             </li>
                             <li style="margin-top: 8px;">
-                                <strong>Curso de Java SE: SQL y Bases de Datos:</strong> Diseño de esquemas, manipulación de datos relacionales e integración con el lenguaje.<br>
+                                <strong>Curso de Introducción al Desarrollo Backend:</strong> Arquitectura cliente-servidor, protocolos HTTP y fundamentos.<br>
+                                <a href="https://platzi.com/p/camachodanim27/curso/12199-course/diploma/detalle/" target="_blank" style="color: var(--neon-color); font-size: 0.85rem; text-decoration: none;">🔗 Ver Diploma</a>
+                            </li>
+                            <li style="margin-top: 8px;">
+                                <strong>Curso de Java SE: SQL y Bases de Datos:</strong> Diseño de esquemas relacionales, manipulación de datos y consultas SQL.<br>
                                 <a href="https://platzi.com/p/camachodanim27/curso/8048-course/diploma/detalle/" target="_blank" style="color: var(--neon-color); font-size: 0.85rem; text-decoration: none;">🔗 Ver Diploma</a>
                             </li>
                             <li style="margin-top: 8px;">
-                                <strong>Curso de Java Spring:</strong> Fundamentos del framework, inyección de dependencias y contenedor de inversión de control.<br>
+                                <strong>Curso de Java Spring:</strong> Inyección de dependencias, contenedores IoC y arquitectura del framework.<br>
                                 <a href="https://platzi.com/p/camachodanim27/curso/12217-course/diploma/detalle/" target="_blank" style="color: var(--neon-color); font-size: 0.85rem; text-decoration: none;">🔗 Ver Diploma</a>
                             </li>
                             <li style="margin-top: 8px;">
-                                <strong>Curso de Java Spring Boot:</strong> Construcción rápida de aplicaciones listas para producción y configuración automatizada de APIs RESTful.<br>
-                                <a href="https://platzi.com/p/camachodanim27/curso/1996-course/diploma/detalle/" target="_blank" style="color: var(--neon-color); font-size: 0.85rem; text-decoration: none;">🔗 Ver Diploma</a>
+                                <strong>Curso de Java Spring Data JPA: Bases de Datos:</strong> Persistencia avanzada, repositorios, ORM y gestión relacional.<br>
+                                <a href="https://platzi.com/p/camachodanim27/curso/7825-course/diploma/detalle/" target="_blank" style="color: var(--neon-color); font-size: 0.85rem; text-decoration: none;">🔗 Ver Diploma</a>
                             </li>
-
                             <li style="margin-top: 8px;">
-                                <strong>Curso de Introducción a los Microservicios:</strong> Fundamentos de arquitecturas distribuidas, comunicación entre servicios y diseño modular (14 horas).<br>
-                                <a href="https://platzi.com/@camachodanim27/" target="_blank" style="color: var(--neon-color); font-size: 0.85rem; text-decoration: none;">🔗 Ver Diploma</a>
+                                <strong>Curso de Java Spring Security: Autenticación y Seguridad Web:</strong> Implementación de filtros, control de acceso y seguridad web.<br>
+                                <a href="https://platzi.com/p/camachodanim27/curso/7694-course/diploma/detalle/" target="_blank" style="color: var(--neon-color); font-size: 0.85rem; text-decoration: none;">🔗 Ver Diploma</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li style="margin-top: 18px;">
+                        <strong>Especialización en Arquitecturas Distribuidas</strong>
+                        <ul style="list-style-type: disc; margin-left: 20px; margin-top: 6px; line-height: 1.6;">
+                            <li>
+                                <strong>Curso de Introducción a los Microservicios:</strong> Fundamentos de arquitecturas distribuidas, comunicación modular y diseño de microservicios.<br>
+                                <a href="https://platzi.com/p/camachodanim27/curso/12071-course/diploma/detalle/" target="_blank" style="color: var(--neon-color); font-size: 0.85rem; text-decoration: none;">🔗 Ver Diploma</a>
                             </li>
                         </ul>
                     </li>
